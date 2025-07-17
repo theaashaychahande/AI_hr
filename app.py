@@ -31,17 +31,19 @@ def verify_interviewer():
     candidate_id = request.form.get("candidate_id")
     if not candidate_id:
         return jsonify({"status": "error", "message": "Missing candidate_id"})
-      
+
     file = request.files["frame"]
     frame = load_image_from_bytes(file.read())
+
     temp_path = os.path.join(TEMP_DIR, "verify_frame.jpg")
     cv2.imwrite(temp_path, frame)
-   ref_face_path = os.path.join(REFERENCE_FACE_DIR, f"{candidate_id}.jpg")
+
+    ref_face_path = os.path.join(REFERENCE_FACE_DIR, f"{candidate_id}.jpg")
+
     if not os.path.exists(ref_face_path):
         return jsonify({"status": "error", "message": "Reference face not found"})
 
     try:
-      
         result = DeepFace.verify(ref_face_path, temp_path, model_name="Facenet")
 
         if not result["verified"]:
@@ -61,4 +63,3 @@ def verify_interviewer():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
-   
