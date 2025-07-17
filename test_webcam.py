@@ -1,7 +1,6 @@
 import cv2
 import requests
 
-# 🎯 Flask API URL
 API_REGISTER = "http://localhost:5000/register-face"
 API_VERIFY = "http://localhost:5000/verify-interviewer"
 
@@ -38,7 +37,6 @@ def main():
             print("Error: Failed to read from webcam.")
             break
 
-        # Show webcam feed
         cv2.imshow('Webcam Feed', frame)
 
         key = cv2.waitKey(1)
