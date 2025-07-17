@@ -6,14 +6,30 @@ import os
 
 app = Flask(__name__)
 
+# Suppress TensorFlow warnings (optional)
+os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+
 REFERENCE_FACE_DIR = "reference_faces"
 TEMP_DIR = "temp"
 os.makedirs(TEMP_DIR, exist_ok=True)
+os.makedirs(REFERENCE_FACE_DIR, exist_ok=True)
 
 def load_image_from_bytes(data):
     """Convert bytes to OpenCV image"""
     img = cv2.imdecode(np.frombuffer(data, np.uint8), cv2.IMREAD_COLOR)
     return img
+
+@app.route("/")
+def home():
+    """Welcome message for root URL"""
+    return jsonify({
+        "message": "AI Interview Assistant Backend Running!",
+        "available_routes": {
+            "verify_interviewer": "/verify-interviewer (POST)",
+        },
+        "status": "OK"
+    })
 
 @app.route("/verify-interviewer", methods=["POST"])
 def verify_interviewer():
