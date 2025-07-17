@@ -1,134 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Hiring Assistant</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
-      color: #333;
-      padding: 40px;
-      line-height: 1.6;
-      max-width: 900px;
-      margin: auto;
-    }
+# 🧠 AI Hiring Assistant
 
-    h1, h2, h3 {
-      color: #2c3e50;
-      margin-top: 50px;
-    }
+**AI Hiring Assistant** is a smart, secure, and scalable tool designed to automate the first-round interview process using artificial intelligence.
 
-    p, li {
-      font-size: 16px;
-    }
+It helps companies streamline hiring by using facial recognition, real-time feedback, and adaptive questioning to assess candidates efficiently and fairly.
 
-    strong {
-      color: #2c3e50;
-    }
+---
 
-    ul {
-      padding-left: 20px;
-    }
+## 🎯 What Is It?
 
-    .footer {
-      margin-top: 80px;
-      font-size: 0.9em;
-      color: #777;
-      border-top: 1px solid #ddd;
-      padding-top: 20px;
-    }
+The **AI Hiring Assistant** is an intelligent system that conducts first-round technical and behavioral interviews with candidates using AI.
 
-    a {
-      color: #3498db;
-      text-decoration: none;
-    }
+It is built to:
+- Verify candidate identity using webcam
+- Ask adaptive, role-specific questions
+- Analyze answers and provide instant feedback
+- Detect fraud or suspicious behavior
 
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
+---
 
-  <h1>🧠 AI Hiring Assistant</h1>
-  <p>
-    <strong>AI Hiring Assistant</strong> is a smart, secure, and scalable tool designed to automate the first-round interview process using artificial intelligence.
-  </p>
-  <p>
-    It helps companies streamline hiring by using facial recognition, real-time feedback, and adaptive questioning to assess candidates efficiently and fairly.
-  </p>
+## 💡 Why It's Useful
 
-  <h2>🎯 What Is It?</h2>
-  <p>
-    The AI Hiring Assistant is an intelligent system that conducts first-round technical and behavioral interviews with candidates using AI.
-  </p>
-  <p>
-    It is built to:
-  </p>
-  <ul>
-    <li>Verify candidate identity using webcam</li>
-    <li>Ask adaptive, role-specific questions</li>
-    <li>Analyze answers and provide instant feedback</li>
-    <li>Detect fraud or suspicious behavior</li>
-  </ul>
+Hiring is time-consuming and often subjective. This tool helps hiring teams by:
 
-  <h2>💡 Why It's Useful</h2>
-  <p>
-    Hiring is time-consuming and often subjective. This tool helps hiring teams by:
-  </p>
-  <ul>
-    <li>✅ <strong>Reducing manual effort</strong> – Automates screening interviews</li>
-    <li>✅ <strong>Improving fairness</strong> – Reduces human bias in candidate evaluation</li>
-    <li>✅ <strong>Preventing cheating</strong> – Uses webcam and browser lockdown to ensure integrity</li>
-    <li>✅ <strong>Providing instant feedback</strong> – Gives candidates real-time scoring and suggestions</li>
-    <li>✅ <strong>Scaling easily</strong> – Handles multiple interviews at once without extra resources</li>
-  </ul>
+✅ **Reducing manual effort** – Automates screening interviews  
+✅ **Improving fairness** – Reduces human bias in candidate evaluation  
+✅ **Preventing cheating** – Uses webcam and browser lockdown to ensure integrity  
+✅ **Providing instant feedback** – Gives candidates real-time scoring and suggestions  
+✅ **Scaling easily** – Handles multiple interviews at once without extra resources
 
-  <h2>👥 Who Can Use It?</h2>
-  <p>
-    This tool is ideal for:
-  </p>
-  <ul>
-    <li>💼 HR teams hiring for technical or non-technical roles</li>
-    <li>🎓 Educational institutions conducting student interviews</li>
-    <li>🏢 Startups and enterprises aiming to streamline hiring</li>
-    <li>🌐 Remote hiring platforms looking for secure and scalable solutions</li>
-  </ul>
+---
 
-  <h2>🧠 Core Features</h2>
-  <p>
-    The AI Hiring Assistant includes:
-  </p>
-  <ul>
-    <li><strong>🔐 Face Verification</strong> – Confirms identity using webcam</li>
-    <li><strong>📷 Webcam Integration</strong> – Captures real-time video frames for verification</li>
-    <li><strong>🤖 Adaptive Questioning</strong> – Asks role-specific questions based on candidate profile</li>
-    <li><strong>📊 Real-Time Feedback</strong> – Scores answers and gives instant suggestions</li>
-    <li><strong>🚨 Fraud Detection</strong> – Detects suspicious behavior like tab switching or multiple faces</li>
-  </ul>
+## 👥 Who Can Use It?
 
-  <h2>🚀 How It Helps Hiring Teams</h2>
-  <p>
-    By using AI, this tool helps companies:
-  </p>
-  <ul>
-    <li>Reduce interview scheduling and coordination</li>
-    <li>Ensure consistent and fair evaluation across all candidates</li>
-    <li>Scale interviews to hundreds of applicants with minimal effort</li>
-    <li>Improve candidate experience with instant feedback</li>
-    <li>Maintain integrity and prevent cheating during online interviews</li>
-  </ul>
+This tool is ideal for:
 
-  <div class="footer">
-    <p>
-      This project is built with <strong>Python</strong>, <strong>Flask</strong>, <strong>OpenCV</strong>, and <strong>DeepFace</strong> — combining modern web and AI technologies to bring automation and intelligence to hiring.
-    </p>
-    <p>
-      Want to contribute or learn more? Reach out or explore the code!
-    </p>
-  </div>
+- 💼 **HR teams** hiring for technical or non-technical roles  
+- 🎓 Educational institutions conducting student interviews  
+- 🏢 Startups and enterprises aiming to streamline hiring  
+- 🌐 Remote hiring platforms looking for secure and scalable solutions
 
-</body>
-</html>
+---
+
+## 🧠 Core Features
+
+The AI Hiring Assistant includes:
+
+- 🔐 **Face Verification** – Confirms identity using webcam  
+- 📷 **Webcam Integration** – Captures real-time video frames for verification  
+- 🤖 **Adaptive Questioning** – Asks role-specific questions based on candidate profile  
+- 📊 **Real-Time Feedback** – Scores answers and gives instant suggestions  
+- 🚨 **Fraud Detection** – Detects suspicious behavior like tab switching or multiple faces
+
+---
+
+## 🚀 How It Helps Hiring Teams
+
+By using AI, this tool helps companies:
+
+- Reduce interview scheduling and coordination  
+- Ensure consistent and fair evaluation across all candidates  
+- Scale interviews to hundreds of applicants with minimal effort  
+- Improve candidate experience with instant feedback  
+- Maintain integrity and prevent cheating during online interviews
+
+---
+
+## 💡 Built With
+
+This project is built with:
+- **Python** – For backend logic
+- **Flask** – API server
+- **OpenCV** – Webcam capture and image processing
+- **DeepFace** – AI-powered face verification
+- **TensorFlow** – Underlying model (Facenet)
+
+---
+
+## 📬 Want to Learn More?
+
+Want to contribute or explore how it works under the hood?  
+Check out the code or reach out to learn more!
